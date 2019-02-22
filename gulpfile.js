@@ -26,8 +26,7 @@ const gulp = require("gulp"),
   mozjpeg = require("imagemin-mozjpeg"),
   webp = require("gulp-webp"),
   pngquant = require("imagemin-pngquant"),
-  cssnano = require("cssnano"),
-  replace = require('gulp-replace');
+  cssnano = require("cssnano");
 
 // Server connect
 gulp.task("browserSync", function () {
@@ -117,7 +116,7 @@ gulp.task("js", function () {
 gulp.task("webp", function () {
   return gulp.src("./src/img/**/*.+(png|jpg|jpeg)")
     .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest("./src/img/webp"));
+    .pipe(gulp.dest("./src/img"));
 });
 
 gulp.task("image", function () {
@@ -179,7 +178,7 @@ gulp.task("copy", ["fonts"], function () {
 
 gulp.task("css:build", function () {
   const plugins = [
-    cssnano()
+    csso()
   ];
   return gulp.src("./src/css/*.css")
     .pipe(postcss(plugins))
