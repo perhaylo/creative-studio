@@ -1,0 +1,11 @@
+.page {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+
+  &__wrapper {
+    max-width: 1000px;
+    min-width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
