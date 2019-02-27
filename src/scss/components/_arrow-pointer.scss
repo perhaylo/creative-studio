@@ -1,0 +1,32 @@
+.arrow-pointer {
+  display: block;
+  position: relative;
+
+  &::before {
+    content: "\2192";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    color: currentColor;
+  }
+
+  &--right {
+    padding-right: 1.65em;
+    margin-right: -.85em;
+
+    &::before {
+      right: .3em;
+      margin-top: -.12em;
+    }
+  }
+
+  &--left {
+    padding-left: 1.5em;
+
+    &::before {
+      left: 0;
+      margin-top: -.15em;
+    }
+  }
+}

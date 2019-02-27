@@ -29,7 +29,8 @@
     font-weight: 600;
     color: inherit;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $color-hover-nav;
     }
   }
