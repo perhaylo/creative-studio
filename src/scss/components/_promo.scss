@@ -1,40 +1,41 @@
 .promo {
-  position: relative;
-  margin: 22px 0 18px;
-  background-color: #fe9b00;
-  background-image: linear-gradient(to right, #fd9900, #e25000);
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -22px;
-    right: 0;
-    left: 0;
-    height: 1px;
-    background-color: $color-div-line;
-  }
-
   &__wrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 38px 26px;
+    background-color: #fe9b00;
+    background-image: linear-gradient(to right, #fd9900, #e25000);
+  }
+
+  &__left,
+  &__right {
     width: 50%;
-    padding: 34px 0 48px 25px;
   }
 
-  &__header {
-    margin: 0 0 28px; 
-    padding: 0;
-    font-size: 85px;
-    font-weight: 600;
-    line-height: .9;
-    letter-spacing: 1px;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-shadow: 1px 2px 2px rgba(144, 63, 3, .35);
+  &__left {
+    float: left;
   }
 
-  &__inner {
+  &__right {
+    float: right;
+  }
+
+  &__link {
+    display: block;
+    float: right;
+    color: #fe9b00;
+    text-decoration: none;
+    letter-spacing: .01em;
+    
+    &:focus,
+    &:hover {
+      color: #ffffff;
+    }
+  }
+
+  &__slogan {
     margin: 0;
-    padding: 14px 16px;
+    padding: 16px 0 16px 14px;
     font-size: 15px;
     font-weight: 600;
     color: #999898;
@@ -48,34 +49,22 @@
     }
   }
 
-  &__link {
-    display: block;
-    float: right;
-    color: #fe9b00;
-    text-decoration: none;
-    
-    &:focus,
-    &:hover {
-      opacity: .75;
-    }
-  }
-
-  &__banners {
-    position: absolute;
-    overflow: hidden;
-    left: 50%;;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding: 0;
+  &__header {
     margin: 0;
-    font-size: 0;
+    margin-bottom: 34px; 
+    font-size: 85px;
+    font-weight: 600;
+    line-height: .9;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 2px rgba(144, 63, 3, .35);
   }
 
-  &__banners-item {
+  &__img {
     position: absolute;
-    right: 0;
     bottom: 0;
+    right: 0;
     box-shadow: -4px 16px 32px #000;
 
     &--primary {

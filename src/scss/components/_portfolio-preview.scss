@@ -1,39 +1,58 @@
 .portfolio-preview {
   position: relative;
-  padding-top: 22px;
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background-color: $color-div-line;
-  }
+  padding-top: 21px;
+  margin-bottom: 40px;
 
   &__header {
-    margin: 0 0 22px;
+    margin: 0 0 15px;
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
+    color: $color-headers;
   }
 
   &__list {
     list-style: none;
     padding: 0;
     margin: 0;
+  }
 
-    &-item {
-      position: relative;
-      float: left;
+  &__item {
+    position: relative;
+    float: left;
+    width: calc(25% - 27px);
+    margin-right: 35px;
 
-      a {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-      }
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__link {
+    display: block;
+    margin: 0;
+    padding: 0 22px 0 12px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    line-height: 1.8;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $color-nav-link;
+    color: $color-current-nav;
+
+    &:hover {
+      background-color: $color-current-nav;
+      color: $color-nav-link;
     }
   }
 }

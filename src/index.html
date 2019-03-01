@@ -33,28 +33,30 @@
   </header>
   <main class="main">
     <div class="page__wrapper">
-      <article class="promo">
-        <div class="promo__wrapper">
-          <h1 class="promo__header">creative design services</h1>
-          <p class="promo__inner clearfix">
-            <span>here`s some nice work</span>
-            <a class="promo__link arrow-pointer arrow-pointer--right" href="#">view portfolio</a>
-          </p>
+      <article class="page__block promo">
+        <div class="promo__wrapper clearfix">
+          <div class="promo__left">
+            <h1 class="promo__header">creative design services</h1>
+            <p class="promo__slogan clearfix">
+              <span>here`s some nice work</span>
+              <a class="promo__link link-icon" href="#">view portfolio</a>
+            </p>
+          </div>
+          <div class="promo__right">
+            <img class="promo__img promo__img--primary" src="img/page-promo-1.jpg" alt="Studio promo image" width="327">
+            <img class="promo__img promo__img--secondary" src="img/page-promo-2.jpg" alt="Other studio promo image" width="304">
+          </div>
         </div>
-        <p class="promo__banners">
-          <img class="promo__banners-item promo__banners-item--primary" src="img/page-promo-1.jpg" alt="Studio promo image" width="327">
-          <img class="promo__banners-item promo__banners-item--secondary" src="img/page-promo-2.jpg" alt="Other studio promo image" width="304">
-        </p>
       </article>
-      <article class="advertisement clearfix">
+      <article class="page__block advertisement clearfix">
         <h2 class="visually-hidden">advertisement of studio</h2>
         <section class="advertisement__item">
-          <h3 class="advertisement__item-header arrow-pointer arrow-pointer--left">about us</h3>
-          <p class="advertisement__item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque. Praesent eget consequat libero.</p>
-          <a href="#" class="advertisement__item-link arrow-pointer arrow-pointer--left">read</a>
+          <h3 class="advertisement__header link-icon link-icon--left">about us</h3>
+          <p class="advertisement__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque. Praesent eget consequat libero.</p>
+          <a href="#" class="advertisement__link link-icon link-icon--left">read</a>
         </section>
         <section class="advertisement__item">
-          <h3 class="advertisement__item-header arrow-pointer arrow-pointer--left">our benefits</h3>
+          <h3 class="advertisement__header link-icon link-icon--left">our benefits</h3>
           <ul class="advertisement__list">
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa.</li>
             <li>Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque. Praesent eget consequat</li>
@@ -62,80 +64,95 @@
           </ul>
         </section>
         <section class="advertisement__item">
-          <h3 class="advertisement__item-header arrow-pointer arrow-pointer--left">testimonials</h3>
-          <blockquote class="advertisement__item-blockquote">
-            <p class="advertisement__item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque.</p>
-            <cite class="advertisement__item-autor"><a href="">Rafi, Graphicsfuel.com</a></cite>
+          <h3 class="advertisement__header link-icon link-icon--left">testimonials</h3>
+          <blockquote class="advertisement__blockquote">
+            <p class="advertisement__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque.</p>
+            <cite class="advertisement__autor"><a href="">Rafi, Graphicsfuel.com</a></cite>
           </blockquote>
         </section>
       </article>
-      <article class="portfolio-preview">
-        <h2 class="portfolio-preview__header arrow-pointer arrow-pointer--left">our portfolio</h2>
+      <article class="page__block portfolio-preview">
+        <h2 class="portfolio-preview__header link-icon link-icon--left">our portfolio</h2>
         <ui class="portfolio-preview__list clearfix">
-          <li class="portfolio-preview__list-item">
-            <img src="img/portfolio-example-1.jpg" alt="#">
-            <a href="#">view</a>
+          <li class="portfolio-preview__item">
+            <img src="img/portfolio-example-1.jpg" alt="#" width="215">
+            <a class="portfolio-preview__link link-icon" href="#">view</a>
           </li>
-          <li class="portfolio-preview__list-item">
-            <img src="img/portfolio-example-2.jpg" alt="#">
-            <a href="#">view</a>
+          <li class="portfolio-preview__item">
+            <img src="img/portfolio-example-2.jpg" alt="#" width="215">
+            <a class="portfolio-preview__link link-icon" href="#">view</a>
           </li>
-          <li class="portfolio-preview__list-item">
-            <img src="img/portfolio-example-3.jpg" alt="#">
-            <a href="#">view</a>
+          <li class="portfolio-preview__item">
+            <img src="img/portfolio-example-3.jpg" alt="#" width="215">
+            <a class="portfolio-preview__link link-icon" href="#">view</a>
           </li>
-          <li class="portfolio-preview__list-item">
-            <img src="img/portfolio-example-4.jpg" alt="#">
-            <a href="#">view</a>
+          <li class="portfolio-preview__item">
+            <img src="img/portfolio-example-4.jpg" alt="#" width="215">
+            <a class="portfolio-preview__link link-icon" href="#">view</a>
           </li>
         </ui>
       </article>
-      <section class="preview">
+      <section class="page__block preview clearfix">
         <h2 class="visually-hidden">preview info</h2>
-        <article class="blog-preview">
-          <h3 class="blog-preview__header">blog updates</h3>
-          <p class="blog-preview__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque. Praesent eget consequat libero.</p>
+        <article class="preview__left">
+          <h3 class="preview__header link-icon link-icon--left">blog updates</h3>
+          <p class="preview__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque. Praesent eget consequat libero.</p>
         </article>
-        <article class="socials">
-          <h3 class="socials__header">connect with us</h3>
-          <ul class="socials__list">
-            <li class="socials__list-item">
-              <a href="#"><img src="#" alt="#"></a>
+        <article class="preview__right">
+          <h3 class="preview__header link-icon link-icon--left">connect with us</h3>
+          <ul class="preview__list clearfix">
+            <li class="preview__item">
+              <a href="#" title="Twitter">
+                <img src="img/social-icon-twitter.png" alt="#">
+                <span class="visually-hidden">link to twitter</span>
+              </a>
             </li>
-            <li class="socials__list-item">
-              <a href="#"><img src="#" alt="#"></a>
+            <li class="preview__item">
+              <a href="#" title="Facebook">
+                <img src="img/social-icon-facebook.png" alt="#">
+                <span class="visually-hidden">link to facebook</span>
+              </a>
             </li>
-            <li class="socials__list-item">
-              <a href="#"><img src="#" alt="#"></a>
+            <li class="preview__item">
+              <a href="#" title="Flickr">
+                <img src="img/social-icon-flickr.png" alt="#">
+                <span class="visually-hidden">link to flickr</span>
+              </a>
             </li>
-            <li class="socials__list-item">
-              <a href="#"><img src="#" alt="#"></a>
+            <li class="preview__item">
+              <a href="#" title="RSS">
+                <img src="img/social-icon-rss.png" alt="#">
+                <span class="visually-hidden">link to rss</span>
+              </a>
             </li>
           </ul>
         </article>
       </section>
     </div>
   </main>
-  <!-- <footer class="footer">
-    <div class="page__wrapper">
-      <section class="footer__content">
-        <h2 class="visually-hidden"> footer main content</h2>
-        <ul class="footer__nav-list">
-          <li class="footer__nav-item">home</li>
-          <li class="footer__nav-item">about us</li>
-          <li class="footer__nav-item">portfolio</li>
-          <li class="footer__nav-item">services</li>
-          <li class="footer__nav-item">blog</li>
-          <li class="footer__nav-item">contact us</li>
-        </ul>
-        <p class="footer__copy">&copy; 2010 CreativeStudio. All Rights Reserved</p>
-      </section>
-      <a class="footer__logo main-logo" href="#">
-        <img src="#" alt="#">
-        <span class="visually-hidden">main page</span>
-      </a>
+  <footer class="footer">
+    <div class="page__wrapper clearfix">
+      <div class="footer__left">
+        <div class="footer__content">
+          <ul class="footer__list clearfix">
+              <li class="footer__item"><a>home</a></li>
+              <li class="footer__item"><a href="#">about us</a></li>
+              <li class="footer__item"><a href="#">portfolio</a></li>
+              <li class="footer__item"><a href="#">services</a></li>
+              <li class="footer__item"><a href="#">blog</a></li>
+              <li class="footer__item"><a href="#">contact us</a></li>
+            </ul>
+            <p class="footer__copy">&copy; 2010 CreativeStudio. All Rights Reserved</p>
+        </div>
+      </div>
+      <div class="footer__right">
+        <a class="footer__logo main-logo">
+          <img src="img/main-logo.png" alt="Studio logo" width="130">
+          <span class="visually-hidden">main page</span>
+        </a>
+      </div>
     </div>
-  </footer> -->
+  </footer>
   <!-- inject:js -->
   <script src="js/main.js"></script>
   <!-- endinject -->
