@@ -4,6 +4,7 @@ node_modules/
 dist/
 build/
 design/
+.vscode/
 npm-debug.*
 
 # files
