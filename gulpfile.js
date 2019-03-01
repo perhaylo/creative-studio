@@ -223,16 +223,4 @@ gulp.task("watch", ["browserSync", "inject"], function () {
       browserSync.reload();
     }, 100);
   });
-
-  // gulp.watch("./src/*.html", ["html"])
-  //   .on("change", browserSync.reload);
-
-  // gulp.watch("./src/js/**/*.js", ["js"])
-  //   .on("change", browserSync.reload);
-
-  // gulp.watch("./src/scss/**/*.scss", function () {
-  //   setTimeout(function () {
-  //     gulp.start("sass");
-  //   }, 100);
-  // }).on("change", browserSync.reload);
 });
