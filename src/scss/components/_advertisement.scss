@@ -1,0 +1,116 @@
+.advertisement {
+  padding-top: 10px;
+
+  &__header {
+    position: relative;
+    margin: 0;
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: 2.8;
+    font-weight: 600;
+    color: $color-headers;
+    text-transform: uppercase;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background-color: #000000;;
+    }
+
+    &::before {
+      text-align: left;
+    }
+  }
+
+  &__item {
+    float: left;
+    width: calc(33.33% - 38px);
+    margin: 0 56px 0 0;
+    font-size: 12px;
+    line-height: 1.66;
+    color: $color-font;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__content {
+    margin: 0 0 6px;;
+  }
+
+  &__blockquote {
+    margin: 0;
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-nav-link;
+    user-select: none;
+
+    &::before {
+      color: $color-font;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-font;
+    }
+  }
+
+  &__autor {
+    display: block;
+    margin-top: 18px;
+
+    a {
+      text-decoration: none;
+      color: #090909;
+    }
+
+    &:hover {
+      a {
+        color: $color-nav-link;
+      }
+    } 
+  }
+
+  &__blockquote {
+    margin: 0;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      position: relative;
+      padding: 0 0 0 30px;
+      margin-bottom: 8px;
+      line-height: 1.4;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        background-image: url("../img/check-icon.png.jpg");
+        background-repeat: no-repeat;
+        background-position: cover;
+      }
+    }
+  }
+}

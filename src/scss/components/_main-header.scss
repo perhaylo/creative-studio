@@ -1,0 +1,57 @@
+.main-header {
+  position: relative;
+  padding: 37px 0 0;
+  margin-bottom: 18px;
+  user-select: none;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 17px;
+    background-color: #090909;
+  }
+
+  &__logo {
+    float: left;
+  }
+
+  &__wrapper {
+    float: right;
+    position: relative;
+    height: 100px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+  }
+
+  &__nav {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__email {
+    font-family: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: $color-email-link;
+
+    &:hover,
+    &:focus {
+      color: $color-hover-email;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.page {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+
+  &__wrapper {
+    max-width: 1000px;
+    min-width: 980px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__block {
+    position: relative;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid $color-div-line;
+  }
+}

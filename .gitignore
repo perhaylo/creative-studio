@@ -1,0 +1,19 @@
+# folders
+bower_components/
+node_modules/
+dist/
+build/
+design/
+npm-debug.*
+
+# files
+!.gitkeep
+.DS_Store
+Thumbs.db
+.idea
+*.log
+*.psd
+*.pdf
+*.ai
+*.subline*
+package-lock.json

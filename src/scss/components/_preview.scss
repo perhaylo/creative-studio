@@ -1,0 +1,46 @@
+.preview {
+  margin-bottom: 38px;
+
+  &__left {
+    float: left;
+    width: 75%;
+    padding-right: 62px
+  }
+
+  &__right {
+    float: right;
+    width: 25%;
+    padding-left: 24px;
+  }
+
+  &__header {
+    margin-top: 8px;
+    margin-bottom: 26px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color-headers;
+  }
+
+  &__content {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.66;
+    color: $color-font;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    float: left;
+    margin-right: 16px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
