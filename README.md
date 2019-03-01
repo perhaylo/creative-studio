@@ -5,3 +5,6 @@
 Simple static web page based on free template 😄 
 Without design of mobile screen 😭😭😭
 ```
+
+### Template sample for comparison
+![Template image sample](https://perhaylo.github.io/creative-studio/img/creativestudio.jpg)
