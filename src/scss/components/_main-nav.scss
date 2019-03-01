@@ -9,10 +9,10 @@
   &__item {
     float: left;
     margin-right: 64px;
-    color: $color-nav-link;
+    color: $color-orange;
 
     &--current {
-      color: $color-current-nav;
+      color: $color-font-dark;
     }
 
     &:last-child {

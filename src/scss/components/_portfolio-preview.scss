@@ -8,7 +8,7 @@
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
-    color: $color-headers;
+    color: $color-font-dark;
   }
 
   &__list {
@@ -47,12 +47,12 @@
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: $color-nav-link;
-    color: $color-current-nav;
+    background-color: $color-orange;
+    color: $color-font-dark;
 
     &:hover {
-      background-color: $color-current-nav;
-      color: $color-nav-link;
+      background-color: $color-font-dark;
+      color: $color-orange;
     }
   }
 }

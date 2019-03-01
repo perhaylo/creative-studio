@@ -47,11 +47,11 @@
     font-size: 14px;
     font-weight: 400;
     text-decoration: none;
-    color: $color-email-link;
+    color: $color-grey;
 
     &:hover,
     &:focus {
-      color: $color-hover-email;
+      color: $color-grey-dark;
     }
   }
 }

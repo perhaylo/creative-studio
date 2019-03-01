@@ -8,7 +8,7 @@
     font-size: 18px;
     line-height: 2.8;
     font-weight: 600;
-    color: $color-headers;
+    color: $color-font-dark;
     text-transform: uppercase;
 
     &::after {
@@ -54,7 +54,7 @@
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    color: $color-nav-link;
+    color: $color-orange;
     user-select: none;
 
     &::before {
@@ -78,7 +78,7 @@
 
     &:hover {
       a {
-        color: $color-nav-link;
+        color: $color-orange;
       }
     } 
   }
