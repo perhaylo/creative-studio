@@ -5,7 +5,7 @@ Simple static web page based on free template 😄
 Without design of mobile screen 😭😭😭
 ```
 
-> You can visit page -> [Creative Studio Page](https://perhaylo.github.io/creative-studio/)
+You can visit page -> [Creative Studio Page](https://perhaylo.github.io/creative-studio/)
 
 Template image sample for comparison
 
